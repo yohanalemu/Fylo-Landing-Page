@@ -1,0 +1,376 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Open Sans", sans-serif;
+    background-color: hsl(0, 0%, 100%);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+   font-family: "Raleway", sans-serif;
+   font-weight: 700;
+   color:hsl(243, 87%, 12%);
+  }
+
+  p {
+    font-weight: 400;
+    color:hsl(243, 87%, 12%);
+    font-size: 1rem;
+  }
+  
+  .navbar {
+    width: 100%;
+    background: transparent;
+    padding: 20px 0;
+    z-index: 1000;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-links a {
+    margin-left: 30px;
+    text-decoration: none;
+    color:  hsl(243, 87%, 12%);
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #f39c12;
+  }
+  
+
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: 100px; /* To avoid overlap with fixed navbar */
+    color: #fff;
+    padding-bottom:100px;
+  }
+  
+  .hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+  }
+  
+  .hero-text {
+    flex: 1;
+    max-width: 500px;
+  }
+  
+  .hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-text p {
+    margin-bottom: 30px;
+  }
+  
+  .email-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap:30px;
+  }
+  
+  .email-form input {
+    padding: 16px;
+    border: 1px solid black;
+    border-radius: 4px;
+    outline: none;
+    width: 250px;
+  }
+  
+  .email-form button {
+    padding: 12px 20px;
+    border: none;
+    background-color:  hsl(224, 93%, 58%);
+    color: #fff;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width:200px;
+  }
+  
+  .email-form button:hover {
+    background-color: hsla(224, 93%, 58%, 0.555);
+  }
+  
+  .hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .hero-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+
+
+  .feature-section {
+    background-color: hsl(240, 75%, 98%);
+    color: #fff;
+    position: relative;
+    padding: 100px 0;
+  }
+  
+  .curve-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: translateY(-100%);
+    z-index: 1;
+  }
+  
+  .feature-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .feature-text {
+    flex: 1;
+    max-width: 500px;
+  }
+  
+  .feature-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .feature-text p {
+    margin-bottom: 20px;
+  }
+  
+  .green-link {
+    display: inline-block;
+    color: hsl(170, 45%, 43%);
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 2px solid hsl(170, 45%, 43%);
+    padding-bottom: 4px;
+    margin-bottom: 40px;
+    transition: color 0.3s ease;
+  }
+  
+  .green-link .arrow {
+    margin-left: 6px;
+  }
+  
+  .green-link:hover {
+    
+    border-color: hsl(170, 45%, 43%);
+  }
+  
+  .testimonial-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+  
+  .testimonial-text {
+    margin-bottom: 15px;
+  }
+  
+
+  .testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .testimonial-author img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .testimonial-author .name {
+    font-weight: bold;
+  }
+  
+  .testimonial-author .title {
+    color: #bbb;
+    font-size: 0.9rem;
+  }
+  
+  .feature-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .feature-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+
+  .newsletter-section {
+    background-color: hsl(238, 22%, 44%);
+    color: #fff;
+    padding: 80px 0;
+  }
+  
+  .newsletter-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+  }
+  
+  .newsletter-text {
+    flex: 1;
+    max-width: 500px;
+  }
+  
+  .newsletter-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color:white;
+  }
+  
+  .newsletter-text p {
+
+    color: #ffffff;
+  }
+  
+  #newsletter .email-form {
+    flex: 1;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  #newsletter .email-form input {
+    padding: 14px 16px;
+    border: none;
+    border-radius:0;
+    outline: none;
+    font-size: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
+  }
+  
+  #newsletter .email-form button {
+    padding: 14px;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius:0;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
+  }
+  
+
+  .footer {
+    background-color: hsl(243, 87%, 12%);
+    color: #fff;
+    padding-top: 40px;
+    font-size: 0.95rem;
+  }
+  
+  .footer-top {
+    padding-bottom: 20px;
+  }
+  
+  .footer-bottom {
+    padding: 40px 0;
+  }
+  
+  .footer-columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+  }
+  
+  .footer-column {
+    flex: 1;
+    min-width: 180px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .footer-column a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-column a:hover {
+   color: hsla(224, 93%, 58%, 0.555);
+  }
+
+  .footer-column.social-icons {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .contact-info p  {
+    margin-right: 8px;
+    color: #ffffff;
+  }
+  
+  @media (width < 768px) {
+    .hero-content {
+        flex-direction: column-reverse;
+    }
+    
+    .hero .email-form {
+        flex-direction: column;
+    }
+    .email-form input, .email-form button {
+        width:100%;
+    }
+    .feature-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .feature-content h2 {
+        font-size: 1.5rem;
+    }
+    .testimonial-card {
+        width:400px;
+        margin:0 auto;
+    }
+    .newsletter-content {
+        flex-direction: column;
+    }
+    #newsletter .email-form {
+       width:100%;
+    }
+    .footer-columns {
+        flex-direction: column;
+       
+    }
+  }

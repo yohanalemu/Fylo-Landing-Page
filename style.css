@@ -46,7 +46,7 @@
   }
   
   .nav-links a:hover {
-    color: #f39c12;
+    color: hsl(224, 93%, 58%);
   }
   
 
@@ -180,8 +180,8 @@
   }
   
   .green-link:hover {
-    
-    border-color: hsl(170, 45%, 43%);
+    color:  hsl(147, 58%, 55%);
+    border-color:hsl(147, 58%, 55%);
   }
   
   .testimonial-card {
@@ -196,7 +196,6 @@
     margin-bottom: 15px;
   }
   
-
   .testimonial-author {
     display: flex;
     align-items: center;
@@ -257,13 +256,13 @@
   }
   
   .newsletter-text p {
-
     color: #ffffff;
   }
   
   #newsletter .email-form {
     flex: 1;
-    max-width: 400px;
+    max-width: 600px;
+    width:100%;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -272,10 +271,11 @@
   #newsletter .email-form input {
     padding: 14px 16px;
     border: none;
-    border-radius:0;
+    border-radius:4px;
     outline: none;
     font-size: 1rem;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
+    width:100%;
   }
   
   #newsletter .email-form button {
